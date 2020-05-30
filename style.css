@@ -1,0 +1,143 @@
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 2rem 0 2rem;
+}
+
+h1, h3 {
+    color: #F38A27;
+    text-align: center;
+}
+
+h1 {
+    padding-top: .5rem;
+}
+
+nav {
+    background-color: #F1F1F1;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+article {
+    color: white;
+    padding: 1.2rem 0 1.2rem .7rem;
+}
+
+.article1 {
+    background-color: #7DD31F;
+}
+
+.article2 {
+    background-color: #EA5A4D;
+}
+
+.article3 {
+    background-color: #45AEFF;
+}
+
+.fillers {
+    margin-left: 1rem;
+}
+
+/* @media only screen and (min-width: 506px) { */
+
+    .h803, .h1113, .navWords, h2 {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin: 1rem 0 1rem 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    i {
+        margin-right: 1rem;
+    }
+
+    div {
+        margin: 1rem 0 1rem 0;
+    }
+
+/* } */
+
+/* Mobile First, then Tablet (min-width:768px) and ending with Desktop (min-width:1024px) */
+
+@media only screen and (min-width: 768px) {
+
+    .h506, .h1113, .navWords, h2 {
+        display: none;
+    }
+
+    .h803 {
+        display: block;
+    }
+
+    i {
+        display: none !important;
+    }
+
+    nav {
+        justify-content: flex-end;
+        padding-right: 70%;
+    }
+
+    .navWords {
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: black;
+        /* margin: 1% 0 1% 2%; */
+        /* margin-block-start: initial; */
+    }
+
+    .set1 {
+        display: grid;
+        grid-template-rows: 50% 50%;
+/* 
+        grid-template-areas: {
+            "article1 article2"
+            "filler1 filler2";
+        } */
+    }
+
+    .article2 {
+        grid-area: 1 / 2 / 2/ 3;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .h506, .h803 {
+        display: none;
+    }
+
+    .h1113, h2 {
+        display: block;
+    }
+
+    .black {
+        background-color: black;
+        color: #F38A27;
+    }
+
+    .red {
+        color: red;
+        font-weight: bold;
+    }
+}
